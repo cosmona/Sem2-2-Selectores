@@ -1,0 +1,56 @@
+* {
+  margin: 0.5rem;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*----------------------Lista 1----------------------*/
+
+.lista {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  gap: 10px;
+}
+
+.lista li:nth-child(odd) {
+  text-decoration: 2px underline rgb(0, 128, 0);
+}
+
+.lista li:last-child {
+  background-color: rgb(0, 0, 255);
+}
+
+.lista li:nth-child(1)::after {
+  content: "\01F525";
+}
+
+.lista li:nth-child(2)::after {
+  content: "\01F526";
+}
+
+.lista li:nth-child(3)::after {
+  content: "\01F527";
+}
+
+.lista li:nth-child(4)::after {
+  content: "\01F528";
+}
+
+.lista li:nth-child(5)::after {
+  content: "\01F529";
+}
+
+.lista li:nth-child(6)::after {
+  content: "\01F530";
+}
+
+.lista li[lang="en"] {
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+/*----------------------Lista 2----------------------*/
+#provincias li:not(:nth-child(2)) {
+  list-style: upper-roman;
+}
